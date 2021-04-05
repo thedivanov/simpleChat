@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Чатик</title>
+    </head>
+    <body>
+        <div class="h-screen w-screen box-border bg-red-200" id="full">
+            <div id="user_info" class="bg-red-400 w-full flex">
+                <div id="user-avatar">
+                </div>
+            </div>
+            <div id="chat" class="bg-red-300 h-full w-full">
+                <div id="mess_main" class="h-5/6 pt-10 bg-red-600">
+                    <div id="mess" class="bg-white h-4/6 w-5/6 m-auto overflow-y-auto break-words">
+                    </div>
+                </div>
+                <div id="chat_bottom" class="bg-red-400 h-1/6 w-full leading-5 flex">
+                    <div id="textarea--button" class="pt-5 w-full m-auto">
+                        <textarea id="chat-input" class="object-bottom bg-white text-red-900 h-1/2 w-5/6 resize-none"></textarea>
+                        <button class="bg-white text-red-900 border-blue-500 md:border-green-500 b-4 rounded-lg w-1/6" onclick="sendMSG()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="chat.js"></script>
+    </body>
+</html>

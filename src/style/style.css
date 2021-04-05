@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#user_info {
+    height: 10%;
+}
+
+#chat {
+    height: 90%;
+}
+#mess {
+    height: 95%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+textarea {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#avatar {
+    margin-left: 32%;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+#message_avatar {
+    height: 5em;
+}
+
+#textarea--button {
+    margin-left: 8%;
+}
+
+#avatar_div {
+    background-color: yellowgreen;
+}
+#mess {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#in:hover {
+    background-color: yellow;
+}

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "onchange": "^7.1.0",
+    "tailwindcss": "^2.0.4"
+  },
+  "scripts": {
+    "build:css": "tailwind build src/style/style.css -o ./src/static/style.css",
+    "watch:css": "onchange 'src/style/style.css' -- npm run build:css",
+    "watch:css--configs": "onchange 'tailwind.config.js' -- npm run build:css"
+  }
+}
